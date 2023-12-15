@@ -1,0 +1,72 @@
+.logo {
+	@apply font-Dragon leading-normal text-[72px] uppercase relative max-md:text-[60px] max-md:leading-[50px] max-[480px]:text-[35px] max-[480px]:leading-none;
+	background: linear-gradient(
+		92deg,
+		#e23e0a 3.55%,
+		#d9601c 39.06%,
+		#f49320 64.26%,
+		#ff5c00 90.09%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	&::before {
+		content: attr(data-text);
+		@apply absolute top-0 left-0 h-full w-full -z-[1];
+		text-shadow: -0.825px -0.825px 1.83px #a3e4ff;
+	}
+}
+.textLogo {
+	@apply text-[#F28F1F] font-Dragon uppercase;
+	leading-trim: both;
+	text-edge: cap;
+	line-height: none;
+	letter-spacing: 5.155px;
+}
+@media (max-width: 768px) {
+	.textLogo {
+		letter-spacing: 2.48px;
+	}
+}
+@media (max-width: 480px) {
+	.textLogo {
+		font-size: 8px;
+		line-height: 1;
+	}
+}
+
+.menu {
+	@apply flex items-center pl-[70px] rounded-[4px] border border-solid border-[#6F72D0] bg-[#2E318F] relative max-lg:hidden;
+	&::before {
+		content: '';
+		width: 410px;
+		height: 303px;
+		position: absolute;
+		top: -200px;
+		left: -100px;
+		z-index: -5 !important;
+		border-radius: 410px;
+		opacity: 0.9;
+		filter: blur(10px);
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#1157c1 0%,
+			rgba(46, 49, 143, 0) 100%
+		);
+	}
+}
+.lang {
+	@apply py-[10px] px-[27px] rounded-[4px] relative ml-[70px] before:content-[""] before:w-[135px] before:h-[103px] before:bg-bgLang before:top-[-30px] before:left-[-30px] before:absolute max-lg:before:content-none max-lg:p-0 max-lg:m-0 max-lg:py-[3px] max-lg:pl-[13px] max-lg:pr-[10px] max-lg:leading-none;
+	background: linear-gradient(269deg, #fca034 -26.63%, #f46c20 45.59%);
+}
+@media (max-width: 1023px) {
+	.lang {
+		background: transparent;
+		padding: 8px 13px;
+		border-radius: none;
+		&:hover {
+			background-color: #8b8fff;
+		}
+	}
+}

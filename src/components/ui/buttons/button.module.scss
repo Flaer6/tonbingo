@@ -1,0 +1,30 @@
+@import '@/app/vars';
+
+.button {
+	@apply px-[75px] py-[15px] text-[15px] font-semibold relative z-10;
+	&::before {
+		content: '';
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include bg-img('/button-bg.svg');
+	}
+	&::after {
+		content: '';
+		z-index: -1;
+		width: 250px;
+		height: 102px;
+		position: absolute;
+		top: -28px;
+		right: 0;
+		left: -28px;
+		right: 0;
+		bottom: 0;
+		@include bg-img('/button-bg-gr.svg');
+	}
+}
