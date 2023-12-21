@@ -1,5 +1,5 @@
 .logo {
-	@apply font-Dragon leading-normal text-[72px] uppercase relative max-md:text-[60px] max-md:leading-[50px] max-[480px]:text-[35px] max-[480px]:leading-none;
+	@apply font-Dragon leading-none text-[72px] uppercase relative max-md:text-[60px] max-md:leading-[50px] max-[480px]:text-[35px];
 	background: linear-gradient(
 		92deg,
 		#e23e0a 3.55%,

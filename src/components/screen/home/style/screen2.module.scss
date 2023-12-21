@@ -1,0 +1,197 @@
+@import '@/app/vars.scss';
+
+.wrapper {
+	position: relative;
+	&::before {
+		content: '';
+		width: 662px;
+		height: 621px;
+		position: absolute;
+		top: 225px;
+		left: -410px;
+		border-radius: 662px;
+		opacity: 0.9;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#9093ff 0%,
+			rgba(144, 147, 255, 0) 100%
+		);
+		filter: blur(50px);
+		z-index: -1;
+	}
+}
+.infoWrapper {
+	position: relative;
+	&::before {
+		content: '';
+		width: 404px;
+		height: 379px;
+		position: absolute;
+		top: -100px;
+		right: -150px;
+		border-radius: 404px;
+		opacity: 0.9;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#9093ff 0%,
+			rgba(144, 147, 255, 0) 100%
+		);
+
+		filter: blur(50px);
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -170px;
+		width: 847px;
+		height: 291px;
+		z-index: -1;
+		border-radius: 847px;
+		opacity: 0.9;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#070a56 0%,
+			rgba(46, 49, 143, 0) 100%
+		);
+		filter: blur(10px);
+	}
+}
+.lotteryInner {
+	border: 20px solid transparent;
+	border-image: url('/custom-border.svg') 30 / 19px round;
+	padding: 26px 56px 26px 46px;
+	z-index: 55;
+}
+.lottery {
+	position: relative;
+	&::before {
+		content: '';
+		width: 367px;
+		height: 376px;
+		position: absolute;
+		top: -50px;
+		left: -275px;
+		@include bg-img('/lotto_balls_and_lottery_tickets_with_numbers.png');
+	}
+	&::after {
+		content: '';
+		overflow: hidden;
+		width: 358.4px;
+		height: 140.446px;
+		position: absolute;
+		top: 0;
+		right: -108px;
+		border-radius: 358.4px;
+		opacity: 0.9;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#8b8fff 0%,
+			rgba(139, 143, 255, 0.08) 100%
+		);
+		filter: blur(12px);
+	}
+}
+.lotteryWrapper {
+	position: relative;
+	&::before {
+		content: '';
+		width: 1427.188px;
+		height: 803.802px;
+		transform: rotate(169.823deg);
+		position: absolute;
+		bottom: -50px;
+		left: -330px;
+		@include bg-img('/coins-bg-screen2.png');
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		width: 258.725px;
+		height: 373.115px;
+		position: absolute;
+		bottom: -212px;
+		right: -174px;
+		@include bg-img('/coin_3d-2.png');
+	}
+}
+.basicLottery,
+.smartLottery {
+	@apply rounded-[10px] py-[25px] px-[42px] max-w-[480px];
+	h3 {
+		@apply text-[#F2F2F2] font-Jost text-[35px] font-bold leading-[35px];
+	}
+}
+.basicLottery {
+	position: relative;
+	&::before {
+		content: '';
+		width: 304.304px;
+		height: 299.467px;
+		z-index: -1;
+		position: absolute;
+		left: -180px;
+		bottom: -133px;
+		@include bg-img('/coin_3d-1.png');
+	}
+	&::after {
+		content: '';
+		width: 231.998px;
+		height: 236.882px;
+		position: absolute;
+		top: -104px;
+		right: 100px;
+		@include bg-img('/open_lotto_ball_with_coins.png');
+	}
+}
+.smartLottery {
+	background: #d9601c;
+	box-shadow: 5px 2px 30px 0px rgba(244, 108, 32, 0.4);
+	position: relative;
+	&::before {
+		content: '';
+		width: 329px;
+		height: 329px;
+		position: absolute;
+		bottom: -16px;
+		left: -201px;
+		@include bg-img('/IMG_2492.png');
+		z-index: 15;
+	}
+	&::after {
+		content: '';
+		width: 218px;
+		height: 200px;
+		position: absolute;
+		top: -45px;
+		right: -54px;
+		@include bg-img('/lottery_machine.png');
+	}
+}
+.spoilersWrapper {
+	@apply flex flex-col gap-[5px];
+}
+.infoText {
+	position: relative;
+	&::before {
+		content: '';
+		width: 166.828px;
+		height: 92.857px;
+		position: absolute;
+		bottom: -70px;
+		left: -150px;
+		@include bg-img('/gold-coin-1.png');
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		width: 101.454px;
+		height: 56.47px;
+		position: absolute;
+		bottom: -100px;
+		left: -40px;
+		@include bg-img('/gold-coin-2.png');
+		z-index: -1;
+	}
+}

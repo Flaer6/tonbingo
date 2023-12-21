@@ -1,0 +1,35 @@
+@import '@/app/vars';
+
+.screen1 {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 20px;
+
+	&::after {
+		content: url('/garland-1.png');
+		position: absolute;
+		top: -70px;
+		right: 0;
+		@apply max-lg:w-[120px] max-lg:h-[160px] max-lg:right-[40px] max-[480px]:right-0;
+	}
+}
+.video {
+	@apply relative;
+	&::before {
+		content: url('/parrot-sitting.png');
+		width: 100%;
+		position: absolute;
+		bottom: -100px;
+		right: -230px;
+		@apply max-lg:w-[65%] max-lg:right-[100px] max-[850px]:content-[url('/parrot-sitting-mobile.png')] max-md:-right-[27px] max-md:-bottom-[157px] max-md:z-20 max-[480px]:right-[16px];
+	}
+	&::after {
+		content: '';
+		width: 1921px;
+		height: 1083px;
+		@include bg-img('/blur.png');
+		position: absolute;
+		top: -15px;
+		right: 0;
+	}
+}

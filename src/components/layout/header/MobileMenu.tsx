@@ -24,7 +24,7 @@ export default () => {
 				<Language />
 				<Burger click={() => setIsActive(!isActive)} active={isActive} />
 				<ul
-					className={`absolute top-[40px] -left-[2px]  border-[0.3px] border-solid border-[#8B8FFF] bg-[#393DA7] rounded-[3px] transition-all z-20 origin-top ${
+					className={`absolute top-[40px] -left-[2px]  border-[0.3px] border-solid border-[#8B8FFF] bg-[#393DA7] rounded-[3px] transition-all z-20 origin-top pb-[15px] ${
 						isActive ? 'scale-y-[1]' : 'scale-y-0'
 					}`}
 					onClick={() => setIsActive(false)}

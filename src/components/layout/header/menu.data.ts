@@ -1,9 +1,6 @@
-interface IData {
-	name: string
-	link: string
-}
+import { IDataMenu } from '@/interfaces/interfaces'
 
-export const data: IData[] = [
+export const data: IDataMenu[] = [
 	{ name: 'Лотто', link: 'gg' },
 	{ name: 'Кошелёк', link: 'hh' },
 	{ name: 'Команда', link: 'kk' },
