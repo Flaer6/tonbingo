@@ -1,5 +1,5 @@
 .wrapper {
-	@apply rounded-[10px] py-[10px] px-[16px] max-w-[470px] min-w-[400px];
+	@apply rounded-[10px] py-[10px] px-[16px] block;
 }
 .spoilerOpen,
 .spoilerOpenInner {
@@ -9,5 +9,5 @@
 	@apply gap-[12px];
 }
 .spoilerText {
-	@apply pt-3 opacity-60 max-w-[500px] min-w-[400px];
+	@apply pt-3 opacity-60;
 }

@@ -16,10 +16,10 @@ const Spoiler = ({ item, background, imgArrow }: IProps) => {
 
 	return (
 		<ul
-			className={`${styles.wrapper} bg-[${background}] z-10 cursor-pointer`}
+			className={`${styles.wrapper} ${background} z-10 cursor-pointer`}
 			onClick={clicked}
 		>
-			<li className={`${styles.spoilerOpen} `}>
+			<li className={`${styles.spoilerOpen}`}>
 				<div className={`${styles.spoilerOpenInner}`}>
 					<img src={item.logo} alt='logo' />
 					{item.title}
@@ -33,7 +33,7 @@ const Spoiler = ({ item, background, imgArrow }: IProps) => {
 				/>
 			</li>
 			<ul className={`${styles.spoilerText} ${clickedStyle} `}>
-				<li className='max-w-[500px] min-w-[400px]'>{item.text}</li>
+				<li className=''>{item.text}</li>
 			</ul>
 		</ul>
 	)
@@ -44,7 +44,7 @@ export function BasicLottery() {
 		<Spoiler
 			key={index}
 			item={item}
-			background='#23267D'
+			background='bg-[#23267D]'
 			imgArrow='basicLotteryArrowBottom.svg'
 		/>
 	))
@@ -56,7 +56,7 @@ export function SmartLottery() {
 		<Spoiler
 			key={index}
 			item={item}
-			background='#D24F06'
+			background='bg-[#D24F06]'
 			imgArrow='smartLotteryArrowBottom.svg'
 		/>
 	))

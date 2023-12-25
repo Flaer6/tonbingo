@@ -27,7 +27,7 @@
 		content: '';
 		width: 1921px;
 		height: 1083px;
-		@include bg-img('/blur.png');
+		@include bg-img('/blur.png', cover);
 		position: absolute;
 		top: -15px;
 		right: 0;
