@@ -1,0 +1,24 @@
+.wrapper {
+	position: relative;
+	&::before {
+		content: '';
+		@apply w-[524px] h-[424px] absolute top-0 -right-[160px] -z-[1];
+		border-radius: 524px;
+		opacity: 0.6;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#99c2ff 0%,
+			rgba(153, 194, 255, 0) 100%
+		);
+
+		filter: blur(50px);
+	}
+}
+.spoiler {
+	background: linear-gradient(354deg, #30328e -93.26%, #4649c1 83.37%);
+}
+@media (max-width: 768px) {
+	.spoiler {
+		background: #23267d;
+	}
+}

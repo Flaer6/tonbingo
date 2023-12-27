@@ -14,3 +14,8 @@ export interface IButton {
 	text: React.ReactNode
 	onClick?: () => void
 }
+export interface ITonList {
+	img: string
+	title: string
+	text: string
+}
