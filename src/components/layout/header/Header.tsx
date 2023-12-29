@@ -6,7 +6,7 @@ import styles from './header.module.scss'
 
 export default () => {
 	return (
-		<header className='pt-[27px] z-10 max-md:pt-[20px]'>
+		<header className={`${styles.header} pt-[27px] z-10 max-md:pt-[20px]`}>
 			<Container>
 				<div className='flex items-center justify-between gap-3'>
 					<Link href='/' as='/' className='max-[480px]:leading-none'>

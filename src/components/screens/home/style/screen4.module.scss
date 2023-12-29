@@ -1,0 +1,40 @@
+@import '@/app/vars.scss';
+
+.wrapper {
+	@apply relative;
+	&::before {
+		content: '';
+		@apply w-[706px] h-[414px] absolute top-0 left-0;
+		@include bg-img('/blur-2.png', contain);
+	}
+	&::after {
+		content: '';
+		@apply w-[700px] h-[700px] rounded-[700px] opacity-90 blur-[10px] absolute top-0 left-0 -z-[2];
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			#070a56 0%,
+			rgba(46, 49, 143, 0) 100%
+		);
+	}
+}
+.button {
+	@apply font-semibold pt-[25px] pb-[18px] px-[50px] relative;
+	&::before {
+		content: '';
+		@apply w-[261px] h-[65px] absolute top-[10px] left-0 -z-[1];
+		@include bg-img('/bg-btn-2-gr.svg', cover);
+	}
+}
+.image {
+	@apply relative;
+	&::before {
+		content: '';
+		@apply w-[247px] h-[317px] absolute -top-[130px] -left-[145px] -z-[1];
+		@include bg-img('/prise.png', contain);
+	}
+	&::after {
+		content: '';
+		@apply w-[255px] h-[288px] absolute -top-[175px] -right-[135px] -z-[1];
+		@include bg-img('/prise-2.png', contain);
+	}
+}
