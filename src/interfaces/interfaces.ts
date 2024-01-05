@@ -19,3 +19,10 @@ export interface ITonList {
 	title: string
 	text: string
 }
+export interface IGames {
+	img: string
+	moreLink: string
+	gameLink: string
+	type: boolean
+	title?: string
+}

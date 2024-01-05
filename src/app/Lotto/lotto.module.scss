@@ -1,0 +1,15 @@
+@import '../vars.scss';
+
+.wrapper {
+	@apply relative;
+	&::before {
+		content: '';
+		@apply w-full h-full fixed top-0 left-0 -z-[1];
+		@include bg-img('/lotto-bg.png', cover);
+	}
+	&::after {
+		content: '';
+		@apply w-[521px] h-[531px] absolute -top-[170px] -right-[150px] -z-[1] max-sm:w-[240px] max-sm:h-[240px] max-sm:-top-[45px] max-sm:-right-[65px];
+		@include bg-img('/lottery_ball_eight.png', contain);
+	}
+}

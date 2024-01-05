@@ -14,3 +14,17 @@ body {
 	color: #fff;
 	overflow-x: hidden;
 }
+.animate {
+	animation: animate 1s ease-in forwards;
+}
+
+@keyframes animate {
+	from {
+		opacity: 0;
+		// transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		// transform: translateY(0);
+	}
+}

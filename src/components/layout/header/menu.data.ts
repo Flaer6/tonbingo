@@ -1,7 +1,7 @@
 import { IDataMenu } from '@/interfaces/interfaces'
 
 export const data: IDataMenu[] = [
-	{ name: 'Лотто', link: 'gg' },
-	{ name: 'Кошелёк', link: 'hh' },
-	{ name: 'Команда', link: 'kk' },
+	{ name: 'Лото', link: 'Lotto' },
+	{ name: 'Кошелёк', link: 'Wallet' },
+	{ name: 'Команда', link: 'Team' },
 ]

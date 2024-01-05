@@ -1,7 +1,7 @@
 @import '@/app/vars';
 
 .button {
-	@apply px-[75px] py-[15px] text-[15px] font-semibold relative z-10;
+	@apply px-[75px] py-[15px] text-[15px] font-semibold relative z-10 max-sm:px-[35px] max-sm:text-[10px];
 	&::before {
 		content: '';
 		z-index: -1;
@@ -15,7 +15,7 @@
 		@include bg-img('/button-bg.svg', contain);
 	}
 	&::after {
-		content: '';
+		@apply content-[''] max-sm:content-none;
 		z-index: -1;
 		width: 250px;
 		height: 102px;
@@ -26,5 +26,13 @@
 		right: 0;
 		bottom: 0;
 		@include bg-img('/button-bg-gr.svg', contain);
+	}
+}
+.buttonSoon {
+	@apply relative py-[15px] px-[45px] text-[#fff] text-[17.5px] font-semibold z-10 max-sm:text-[10px] max-sm:px-[25px];
+	&::before {
+		content: '';
+		@apply w-[100%] h-[42px] absolute top-[10px] left-0 -z-[1];
+		@include bg-img('/soon-bg.svg', contain);
 	}
 }

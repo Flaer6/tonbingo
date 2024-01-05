@@ -8,7 +8,7 @@ export default () => {
 		<section className={styles.screen1}>
 			<div className='before:content-[url("/coin.png")] before:absolute before:bottom-[-120px] before:left-0'>
 				<Container>
-					<div className='flex items-center gap-[43px] max-md:flex-col max-md:items-start'>
+					<div className='flex items-center gap-[43px] max-md:flex-col max-md:items-start animate'>
 						<div className='max-w-[255px] max-md:max-w-[100%] max-md:rounded-[10px] max-md:bg-[#494DC1] max-md:pt-[26px] max-md:pb-[38px] max-md:px-[10px] max-md:mt-[25px]'>
 							<h1 className='text-[#F2F2F2] text-[50px] font-bold leading-[50px] font-Jost max-[480px]:text-[38px] max-[480px]:leading-[37px]'>
 								100% честное лото
@@ -24,7 +24,7 @@ export default () => {
 									</Link>
 								</div>
 							</div>
-							<div className='max-md:text-center'>
+							<div className='z-10 max-md:text-center'>
 								<Button link='#' text='Играть' />
 							</div>
 							<span className='text-[#9093FF] text-[12px] font-medium leading-[18px] max-w-[212px] hidden max-md:block mt-[25px]'>
